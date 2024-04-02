@@ -378,6 +378,14 @@ body._lock {
   margin-bottom: 5px;
 }
 
+.grid__item_small .grid__logo {
+  max-width: 70%;
+}
+
+.grid__item_small .grid__logo img {
+  max-height: 80px;
+}
+
 .grid__logo {
   flex: 1 1 auto;
   display: flex;
