@@ -1,17 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru">
+<link rel="stylesheet" href="css/style.min.css?_v=20240402084847">
 
-<head>
-    <title>Project</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20240331113819">
-</head>
+<div class="wrapper">
 
-<body>
-
-    <div class="wrapper">
-
+    <div class="screen">
         <div class="main">
             <div class="main__container container">
                 <div class="main__body">
@@ -26,21 +18,23 @@
                     <div class="main__right">
                         <p class="main__dates">17-18.04.2024</p>
                         <h1 class="main__title">живучі</h1>
-                        <p class="main__desc"><span>Природа стійкості українського бізнесу</span></p>
+                        <div class="main__footer">
+                            <p class="main__desc"><span>Природа стійкості українського бізнесу</span></p>
+                            <div class="main__sponsor sponsor-main">
+                                <a href="#" class="sponsor-main__logo">
+                                    <picture><source srcset="img/sponsors/IF.webp" type="image/webp"><img src="img/sponsors/IF.png" alt="Ideas First"></picture>
+                                </a>
+                                <p class="sponsor-main__desc">Організатор</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
+    
         <div class="sponsors">
-            <div class="sponsors__container container_s">
-                <div class="sponsors__body grid">
-                    <div class="grid__item">
-                        <a href="#" class="grid__logo">
-                            <picture><source srcset="img/sponsors/IF.webp" type="image/webp"><img src="img/sponsors/IF.png" alt="Ideas First"></picture>
-                        </a>
-                        <p class="grid__desc">Організатор</p>
-                    </div>
+            <div class="sponsors__container container">
+                <div class="sponsors__body grid">                    
                     <div class="grid__item">
                         <a href="#" class="grid__logo">
                             <picture><source srcset="img/sponsors/OMD.webp" type="image/webp"><img src="img/sponsors/OMD.png" alt="Optimum media"></picture>
@@ -82,11 +76,19 @@
                             <picture><source srcset="img/sponsors/Bolt.webp" type="image/webp"><img src="img/sponsors/Bolt.png" alt="Bolt"></picture>
                         </a>
                         <p class="grid__desc">Дружній партнер</p>
-                    </div>                    
+                    </div>       
+                    <div class="grid__item">
+                        <a href="#" class="grid__logo">
+                            <picture><source srcset="img/sponsors/netpeak.webp" type="image/webp"><img src="img/sponsors/netpeak.png" alt="Netpeak"></picture>
+                        </a>
+                        <p class="grid__desc">Спеціалізований партнер</p>
+                    </div>             
                 </div>
             </div>
         </div>
-
+    </div> 
+    
+    <div class="screen">
         <div class="media">
             <div class="media__container container">
                 <div class="media__wrapper">
@@ -127,8 +129,11 @@
                 </div>
             </div>
         </div>
+    </div>
 
+    <div class="screen">
         <div class="support">
+            <h2 class="support__title">Дякуємо за підтримку! </h2>
             <div class="support__container container">
                 <div class="support__body grid">
                     <div class="grid__item">
@@ -143,7 +148,7 @@
                         </a>
                         <p class="grid__desc">Стиль події</p>
                     </div>
-                    <div class="grid__item">
+                    <div class="grid__item grid__item_bottom">
                         <a href="#" class="grid__logo">
                             <img src="img/partners/Starlight Media New Logo RGB-02 (2).png" alt="Starlight Media">
                         </a>
@@ -328,7 +333,7 @@
                 </div>
             </div>
         </div>
-
+    
         <footer class="footer">
     <div class="footer__container container">
         <div class="footer__body">
@@ -356,7 +361,7 @@
     </div>
 </footer>
     </div>
+    
 
-</body>
-
-</html>
+    
+</div>
