@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="css/style.min.css?_v=20240402130853">
+<link rel="stylesheet" href="css/style.min.css?_v=20240402135105">
 
 <div class="wrapper">
 
@@ -99,10 +99,10 @@
                         </div>
                         <div class="media__stream stream">
                             <div class="stream__btns">
-                                <button type="button" class="stream__btn active">Головна сцена</button>
-                                <button type="button" class="stream__btn">Експертна зона</button>
+                                <button type="button" class="stream__btn active" data-target="main">Головна сцена</button>
+                                <button type="button" class="stream__btn" data-target="expert">Експертна зона</button>
                             </div>
-                            <div class="stream__body"></div>
+                            <div class="stream__body">main</div>
                         </div>
                         <div class="media__vote vote">
                             <p class="vote__title">Будь ласка, оцініть поточний виступ</p>
@@ -362,6 +362,25 @@
 </footer>
     </div>
     
+    <script>
+        const playerChange = (streamBtn) => {
+            const btns = document.querySelectorAll('.stream__btn');
+            const streamBody = document.querySelector('.stream__body');
+            
+            btns.forEach(btn => {
+                btn.classList.remove('active');
+            });
+            streamBtn.classList.add('active');
 
+            streamBody.innerHTML = streamBtn.dataset.target;
+        }
+
+        document.addEventListener('click', (e) => {
+            const streamBtn = e.target.closest('.stream__btn');
+            if (streamBtn) {
+                playerChange(streamBtn);
+            }
+        });
+    </script>
     
 </div>
